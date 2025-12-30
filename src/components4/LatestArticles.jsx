@@ -2,6 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./LatestArticles.css";
 
+/* IMPORT IMAGES FROM src/assets */
+import article1Img from "../assets/article1.jpg";
+import article2Img from "../assets/article2.jpg";
+import article3Img from "../assets/article3.avif";
+import article4Img from "../assets/article4.jpg";
+
 const articles = [
   {
     id: 1,
@@ -11,7 +17,7 @@ const articles = [
     author: "Sneha Kulkarni",
     date: "Dec 18, 2025",
     readTime: "5 min read",
-    image: "/images/article1.jpg",
+    image: article1Img,
   },
   {
     id: 2,
@@ -21,7 +27,7 @@ const articles = [
     author: "Rohan Verma",
     date: "Dec 12, 2025",
     readTime: "4 min read",
-    image: "/images/article2.jpg",
+    image: article2Img,
   },
   {
     id: 3,
@@ -31,7 +37,7 @@ const articles = [
     author: "Neha Sharma",
     date: "Nov 30, 2025",
     readTime: "6 min read",
-    image: "/images/article3.avif",
+    image: article3Img,
   },
   {
     id: 4,
@@ -41,7 +47,7 @@ const articles = [
     author: "Amit Patel",
     date: "Nov 25, 2025",
     readTime: "7 min read",
-    image: "/images/article4.jpg",
+    image: article4Img,
   },
 ];
 

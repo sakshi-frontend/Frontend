@@ -2,11 +2,21 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./BlogCategories.css";
 
+/* IMPORT IMAGES */
+import destinationImg from "../assets/destination.jpeg";
+import tipsImg from "../assets/tips.webp";
+import seasonalImg from "../assets/seasonal.jpeg";
+import pilgrimageImg from "../assets/pilgrimage.jpg";
+import foodCultureImg from "../assets/food-culture.png";
+import adventureImg from "../assets/adventure.jpg";
+import internationalImg from "../assets/international.jpg";
+import expertiseImg from "../assets/expertise.jpg";
+
 const categories = [
   {
     id: "destination",
     title: "Destination Guides",
-    image: "/images/destination.jpeg",
+    image: destinationImg,
     points: [
       "State-wise & country-wise travel guides",
       "Best time to visit destinations",
@@ -16,7 +26,7 @@ const categories = [
   {
     id: "tips",
     title: "Travel Tips & Hacks",
-    image: "/images/tips.webp",
+    image: tipsImg,
     points: [
       "Smart packing checklists",
       "Visa & documentation guidance",
@@ -26,7 +36,7 @@ const categories = [
   {
     id: "seasonal",
     title: "Seasonal & Festive Travel",
-    image: "/images/seasonal.jpeg",
+    image: seasonalImg,
     points: [
       "Navratri, Diwali & Christmas trips",
       "Summer & monsoon travel ideas",
@@ -36,7 +46,7 @@ const categories = [
   {
     id: "pilgrimage",
     title: "Pilgrimage & Spiritual Travel",
-    image: "/images/pilgrimage.jpg",
+    image: pilgrimageImg,
     points: [
       "Char Dham & Jyotirlinga tours",
       "South India temple circuits",
@@ -46,7 +56,7 @@ const categories = [
   {
     id: "food-culture",
     title: "Food & Culture Travel",
-    image: "/images/food-culture.png",
+    image: foodCultureImg,
     points: [
       "Local cuisines & street food trails",
       "Cultural festivals & traditions",
@@ -56,7 +66,7 @@ const categories = [
   {
     id: "adventure",
     title: "Adventure & Nature Travel",
-    image: "/images/adventure.jpg",
+    image: adventureImg,
     points: [
       "Trekking & hiking destinations",
       "Wildlife & nature escapes",
@@ -66,7 +76,7 @@ const categories = [
   {
     id: "international",
     title: "International Travel Guides",
-    image: "/images/international.jpg",
+    image: internationalImg,
     points: [
       "Country-wise international guides",
       "Visa & entry requirements",
@@ -76,7 +86,7 @@ const categories = [
   {
     id: "expertise",
     title: "Company Expertise",
-    image: "/images/expertise.jpg",
+    image: expertiseImg,
     points: [
       "How we design tour packages",
       "Behind-the-scenes journey planning",

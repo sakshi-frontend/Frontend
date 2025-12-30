@@ -3,24 +3,29 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "./RelatedTours.css";
 
+/* IMPORT IMAGES FROM src/assets */
+import rajasthanImg from "../assets/rajasthan.jpg";
+import keralaImg from "../assets/kerala.jpeg";
+import featuredImg from "../assets/featured2.jpg";
+
 const relatedTours = [
   {
     id: 1,
     title: "Rajasthan Royal Tour",
     link: "/tours/rajasthan-royal",
-    image: "/images/rajasthan.jpg",
+    image: rajasthanImg,
   },
   {
     id: 2,
     title: "Kerala Backwaters Experience",
     link: "/tours/kerala-backwaters",
-    image: "/images/kerala.jpeg",
+    image: keralaImg,
   },
   {
     id: 3,
     title: "Char Dham Pilgrimage Package",
     link: "/tours/char-dham",
-    image: "/images/featured2.jpg",
+    image: featuredImg,
   },
 ];
 
@@ -56,6 +61,7 @@ const RelatedTours = () => {
                   decoding="async"
                 />
               </div>
+
               <div className="tour-info">
                 <span className="tour-title">{tour.title}</span>
                 <button className="book-btn">Plan this trip →</button>

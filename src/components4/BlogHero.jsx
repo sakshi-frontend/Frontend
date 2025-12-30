@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./BlogHero.css";
 
+/* Import hero image from src/assets */
+import photographyImg from "../assets/photography.jpeg"; // make sure the path is correct
+
 const categories = [
   "Destinations",
   "Travel Tips",
@@ -29,17 +32,10 @@ const BlogHeroAdvanced = () => {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="blog-hero-adv">
-        <video
-    className="hero-video"
-    autoPlay
-    muted
-    loop
-    playsInline
-  >
-    <source src="/videos/travel-bg.mp4" type="video/mp4" />
-  </video>
-
+      <section
+        className="blog-hero-adv"
+        style={{ backgroundImage: `url(${photographyImg})` }} // fixed here
+      >
         <div className="hero-overlay"></div>
 
         <motion.div

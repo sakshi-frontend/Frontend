@@ -1,11 +1,14 @@
 import React from "react";
 import "./HeroSection.css";
 
+/* Import image from src/assets */
+import careerHero from "../assets/career-hero.jpeg";
+
 const HeroSection = () => {
   return (
     <section
       className="hero-section"
-      style={{ backgroundImage: "url(/images/career-hero.jpeg)" }}
+      style={{ backgroundImage: `url(${careerHero})` }}
     >
       <div className="hero-overlay">
         <div className="hero-content">

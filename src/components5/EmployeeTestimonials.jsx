@@ -1,27 +1,32 @@
 import React from "react";
 import "./EmployeeTestimonials.css";
 
+/* Import images from src/assets */
+import emp1 from "../assets/emp1.jpg";
+import emp2 from "../assets/emp2.jpg";
+import emp3 from "../assets/emp3.jpg";
+
 const testimonials = [
   {
     name: "Anita Sharma",
     role: "Tour Operations Manager",
     quote:
       "Working at KN Tours gave me the opportunity to travel extensively while growing professionally.",
-    photo: "/images/emp1.jpg",
+    photo: emp1,
   },
   {
     name: "Rahul Mehta",
     role: "Senior Travel Consultant",
     quote:
       "The work culture here is collaborative, supportive, and truly travel-driven.",
-    photo: "/images/emp2.jpg",
+    photo: emp2,
   },
   {
     name: "Sneha Kulkarni",
     role: "Marketing Executive",
     quote:
       "KN Tours encourages creativity, learning, and continuous career growth.",
-    photo: "/images/emp3.jpg",
+    photo: emp3,
   },
 ];
 

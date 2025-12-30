@@ -1,12 +1,15 @@
 import React from "react";
 import "./ContactHero.css";
 
+/* Import the image from src/assets */
+import contactHeroImg from "../assets/contact-hero.png";
+
 const ContactHero = () => {
   return (
     <section className="contact-hero">
       <div
         className="hero-bg"
-        style={{ backgroundImage: `url(/images/contact-hero.png)` }}
+        style={{ backgroundImage: `url(${contactHeroImg})` }}
       ></div>
 
       <div className="hero-overlay"></div>
@@ -14,18 +17,14 @@ const ContactHero = () => {
       {/* FULL CENTER WRAPPER */}
       <div className="hero-center-wrapper">
         <div className="hero-center-content">
-          <h1>
-            Contact K N Tours & Travel
-          </h1>
+          <h1>Contact K N Tours & Travel</h1>
 
           <p>
             Planning your next journey? Our travel experts are just a call away.
           </p>
 
           <div className="hero-buttons">
-            <button className="btn primary-btn">
-              Request a Callback
-            </button>
+            <button className="btn primary-btn">Request a Callback</button>
 
             <a
               href="https://wa.me/91XXXXXXXXXX"

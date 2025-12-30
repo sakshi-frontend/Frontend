@@ -1,24 +1,32 @@
 import React from "react";
 import "./LeadershipTeam.css";
 
+/* IMPORT IMAGES FROM src/assets */
+import founderImg from "../assets/founder.jpg";
+import teamImg from "../assets/team.jpg";
+import localExpertsImg from "../assets/local-experts.jpg";
+
 const teamData = [
   {
-    image: "/images/founder.jpg",
+    image: founderImg,
     name: "Mr. Nitin Kulkarni",
     role: "Founder & Managing Director",
-    desc: "With years of experience in the travel industry, Mr. Nitin Kulkarni leads KN Tours & Travel with a strong focus on trust, service quality, and customer satisfaction.",
+    desc:
+      "With years of experience in the travel industry, Mr. Nitin Kulkarni leads KN Tours & Travel with a strong focus on trust, service quality, and customer satisfaction.",
   },
   {
-    image: "/images/team.jpg",
+    image: teamImg,
     name: "Saanvi Deshmukh",
     role: "Tour Planning & Coordination",
-    desc: "A dedicated team of travel professionals ensuring seamless tour planning, accurate execution, and dependable customer support.",
+    desc:
+      "A dedicated team of travel professionals ensuring seamless tour planning, accurate execution, and dependable customer support.",
   },
   {
-    image: "/images/local-experts.jpg",
+    image: localExpertsImg,
     name: "Nikhil Joshi",
     role: "On-Ground Support Specialists",
-    desc: "Experienced local travel experts providing destination knowledge, logistics coordination, and real-time assistance during tours.",
+    desc:
+      "Experienced local travel experts providing destination knowledge, logistics coordination, and real-time assistance during tours.",
   },
 ];
 

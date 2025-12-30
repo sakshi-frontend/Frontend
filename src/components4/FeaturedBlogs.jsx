@@ -2,27 +2,32 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./FeaturedBlogs.css";
 
+/* IMPORT IMAGES FROM src/assets */
+import featured1 from "../assets/featured1.webp";
+import featured2 from "../assets/featured2.jpg";
+import featured3 from "../assets/featured3.webp";
+
 const featuredBlogs = [
   {
     id: 1,
     title: "Complete Rajasthan Travel Guide",
     category: "Destination Guide",
     time: "6 min read",
-    image: "/images/featured1.webp",
+    image: featured1,
   },
   {
     id: 2,
     title: "Char Dham Yatra: Planning & Safety Tips",
     category: "Pilgrimage",
     time: "5 min read",
-    image: "/images/featured2.jpg",
+    image: featured2,
   },
   {
     id: 3,
     title: "How to Travel Smart on a Budget in India",
     category: "Travel Tips",
     time: "4 min read",
-    image: "/images/featured3.webp",
+    image: featured3,
   },
 ];
 

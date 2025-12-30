@@ -1,6 +1,15 @@
 import React from "react";
 import "./TrustBadges.css";
 
+/* IMPORT IMAGES FROM src/assets */
+import googleLogo from "../assets/google.png";
+import partner1 from "../assets/partner1.png";
+import partner2 from "../assets/partner-2.jpg";
+import partner3 from "../assets/partner3.jpg";
+import partner4 from "../assets/partner4.png";
+import partner5 from "../assets/partner5.png";
+import partner6 from "../assets/partner6.jpg";
+
 const trustMetrics = [
   {
     highlight: "5,000+",
@@ -36,13 +45,13 @@ const TrustBadges = () => {
 
         {/* Partner Logos */}
         <div className="trust-logos">
-          <img src="/images/google.png" alt="Google Reviews" loading="lazy" />
-          <img src="/images/partner1.png" alt="Hotel Partner" loading="lazy" />
-          <img src="/images/partner-2.jpg" alt="Transport Partner" loading="lazy" />
-          <img src="/images/partner3.jpg" alt="Airline Partner" loading="lazy" />
-          <img src="/images/partner4.png" alt="Resort Partner" loading="lazy" />
-          <img src="/images/partner5.png" alt="Tourism Partner" loading="lazy" />
-          <img src="/images/partner6.jpg" alt="Corporate Partner" loading="lazy" />
+          <img src={googleLogo} alt="Google Reviews" loading="lazy" />
+          <img src={partner1} alt="Hotel Partner" loading="lazy" />
+          <img src={partner2} alt="Transport Partner" loading="lazy" />
+          <img src={partner3} alt="Airline Partner" loading="lazy" />
+          <img src={partner4} alt="Resort Partner" loading="lazy" />
+          <img src={partner5} alt="Tourism Partner" loading="lazy" />
+          <img src={partner6} alt="Corporate Partner" loading="lazy" />
         </div>
       </div>
     </section>

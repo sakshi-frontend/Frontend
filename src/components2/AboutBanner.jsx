@@ -1,11 +1,14 @@
 import React from "react";
 import "./AboutBanner.css";
 
+/* IMPORT IMAGE FROM src/assets */
+import aboutBanner from "../assets/about-banner.webp";
+
 const AboutBanner = () => {
   return (
     <section
       className="about-banner"
-      style={{ backgroundImage: "url(/images/about-banner.webp)" }}
+      style={{ backgroundImage: `url(${aboutBanner})` }}
     >
       <div className="about-banner-overlay"></div>
 

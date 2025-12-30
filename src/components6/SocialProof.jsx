@@ -1,6 +1,11 @@
 import React from "react";
 import "./SocialProof.css";
 
+/* Import images from src/assets */
+import hotelLogo from "../assets/hotel-logo.jpg";
+import airlineLogo from "../assets/airline-logo.jpg";
+import tourismLogo from "../assets/tourism-logo.jpg";
+
 const SocialProof = () => {
   return (
     <section className="social-proof-section">
@@ -17,9 +22,9 @@ const SocialProof = () => {
 
         {/* Partner Logos */}
         <div className="partners-box">
-          <img src="/images/hotel-logo.jpg" alt="Hotel Partner" />
-          <img src="/images/airline-logo.jpg" alt="Airline Partner" />
-          <img src="/images/tourism-logo.jpg" alt="Tourism Board" />
+          <img src={hotelLogo} alt="Hotel Partner" />
+          <img src={airlineLogo} alt="Airline Partner" />
+          <img src={tourismLogo} alt="Tourism Board" />
         </div>
 
         {/* Metrics */}
