@@ -1,8 +1,29 @@
-.transport-section {
-  padding: 100px 20px;
-  
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
 }
 
+/* TRANSPORT SECTION */
+.transport-section {
+  padding: 100px 20px;
+  background: var(--bg-section); /* dark section background */
+}
+
+/* HEADING */
 .transport-heading {
   text-align: center;
   margin-bottom: 50px;
@@ -11,18 +32,19 @@
 .transport-heading h2 {
   font-size: 34px;
   font-weight: 700;
-  color: #1f1f1f;
+  color: var(--text-primary);
   margin-bottom: 16px;
 }
 
 .transport-heading p {
   font-size: 17px;
-  color: #555;
+  color: var(--text-secondary);
   max-width: 750px;
   margin: 0 auto;
   line-height: 1.7;
 }
 
+/* GRID */
 .transport-container {
   max-width: 1200px;
   margin: auto;
@@ -31,24 +53,25 @@
   gap: 35px;
 }
 
+/* CARD */
 .transport-card {
-  background: #ffffff;
+  background: var(--bg-card); /* dark card background */
   border-radius: 20px;
   padding: 35px 28px;
-  
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45); /* darker shadow */
   transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid var(--border-soft);
 }
 
 .transport-card:hover {
   transform: translateY(-12px);
-  
-  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.65);
 }
 
+/* CARD HEADER */
 .card-header {
   display: flex;
   align-items: center;
@@ -58,23 +81,24 @@
 
 .service-icon {
   font-size: 38px;
-  color: brown;
+  color: var(--accent-primary);
 }
 
 .service-tag {
-  background: #f4efe9;
-  color: brown;
+  background: rgba(224, 177, 92, 0.15); /* light accent background */
+  color: var(--accent-primary);
   padding: 6px 14px;
   font-size: 13px;
   font-weight: 600;
   border-radius: 20px;
 }
 
+/* CARD CONTENT */
 .transport-card h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #1f1f1f;
+  color: var(--text-primary);
 }
 
 .transport-card ul {
@@ -84,16 +108,17 @@
 
 .transport-card li {
   font-size: 15px;
-  color: #444;
+  color: var(--text-secondary);
   margin-bottom: 8px;
   line-height: 1.55;
 }
 
+/* BUTTON */
 .service-btn {
   align-self: flex-start;
   background: transparent;
-  border: 2px solid brown;
-  color: brown;
+  border: 2px solid var(--accent-primary);
+  color: var(--accent-primary);
   padding: 10px 22px;
   border-radius: 30px;
   font-size: 14px;
@@ -103,6 +128,6 @@
 }
 
 .service-btn:hover {
-  background: brown;
-  color: #ffffff;
+  background: var(--accent-primary);
+  color: var(--btn-text);
 }

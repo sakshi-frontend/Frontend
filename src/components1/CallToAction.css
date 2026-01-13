@@ -1,9 +1,29 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* CTA SECTION */
 .cta-section {
   padding: 90px 50px;
   background: linear-gradient(
     120deg,
-    #fffaf5,
-    #ffffff
+    var(--bg-section),
+    var(--bg-main)
   );
 }
 
@@ -21,11 +41,12 @@
 .cta-text h2 {
   font-size: 2.6rem;
   margin-bottom: 14px;
+  color: var(--text-primary);
 }
 
 .cta-text p {
   font-size: 1.05rem;
-  color: #555;
+  color: var(--text-secondary);
   max-width: 520px;
 }
 
@@ -41,31 +62,44 @@
   padding: 14px 16px;
   font-size: 0.95rem;
   border-radius: 12px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-soft);
   outline: none;
+  background: var(--bg-card);
+  color: var(--text-primary);
   transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-form input::placeholder {
+  color: var(--text-muted);
 }
 
 .cta-form input:focus,
 .cta-form select:focus {
-  border-color: brown;
-  box-shadow: 0 0 0 3px rgba(160, 82, 45, 0.15);
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(224, 177, 92, 0.25);
 }
 
 /* BUTTON */
 .cta-btn {
   margin-top: 10px;
   padding: 16px;
-  background: brown;
-  color: #fff;
+  background:  brown;
+  color: white;
   font-size: 1rem;
   border-radius: 30px;
   border: none;
   cursor: pointer;
   font-weight: 600;
   letter-spacing: 0.5px;
-  box-shadow: 0 12px 25px rgba(160, 82, 45, 0.35);
+  box-shadow: 0 12px 25px rgba(224, 177, 92, 0.35);
+  transition: all 0.3s ease;
 }
+
+.cta-btn:hover {
+  background: var(--btn-hover);
+  transform: translateY(-2px);
+}
+
 /* SUCCESS STATE */
 .cta-form-wrapper {
   min-height: 280px;
@@ -80,20 +114,20 @@
 
 .success-icon {
   font-size: 3.5rem;
-  color: #4caf50;
+  color: var(--accent-secondary);
   margin-bottom: 16px;
 }
 
 .cta-success h3 {
   font-size: 1.6rem;
   margin-bottom: 8px;
+  color: var(--text-primary);
 }
 
 .cta-success p {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-secondary);
 }
-
 
 /* RESPONSIVE */
 @media (max-width: 900px) {

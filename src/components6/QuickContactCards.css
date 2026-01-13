@@ -1,6 +1,26 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* Section */
 .quick-contact-section {
   padding: 80px 8%;
-  background: #f9fafb;
+  background: var(--bg-section);
 }
 
 /* Grid */
@@ -13,21 +33,23 @@
 
 /* Card */
 .contact-card {
-    min-height: 100%;
-  background: #ffffff;
+  min-height: 100%;
+  background: var(--bg-card);
   border-radius: 18px;
   padding: 36px 24px;
   text-align: center;
   transition: all 0.4s ease;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
   cursor: pointer;
   flex: 1; 
   animation: fadeUp 0.9s ease forwards;
+  border: 1px solid var(--border-soft);
+  color: var(--text-primary);
 }
 
 .contact-card:hover {
   transform: translateY(-12px);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
 }
 
 /* Icon */
@@ -36,7 +58,7 @@
   height: 64px;
   margin: 0 auto 20px;
   border-radius: 50%;
-  background: rgba(255, 59, 59, 0.1);
+  background: rgba(224, 177, 92, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,15 +68,15 @@
 .icon-box svg {
   width: 30px;
   height: 30px;
-  color: #ff3b3b;
+  color: var(--accent-primary);
 }
 
 .contact-card:hover .icon-box {
-  background: #ff3b3b;
+  background: var(--accent-primary);
 }
 
 .contact-card:hover .icon-box svg {
-  color: #ffffff;
+  color: var(--btn-text);
 }
 
 /* Text */
@@ -62,23 +84,23 @@
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 10px;
+  color: var(--text-primary);
 }
 
 .contact-card p {
   font-size: 0.95rem;
   margin-bottom: 6px;
+  color: var(--text-secondary);
 }
 
 .contact-card span,
 .contact-card a {
   font-size: 0.85rem;
-  color: #666;
+  color: var(--text-muted);
   text-decoration: none;
 }
 
 /* Highlight WhatsApp */
-
-
 .contact-card.highlight .icon-box {
   background: rgba(37, 211, 102, 0.15);
 }

@@ -73,7 +73,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © {new Date().getFullYear()} KN Tours & Travel. All rights reserved.
+        © {new Date().getFullYear()} KN Tours & Travel. All rights reserved  Created By Maxxzoom india pvt. ltd.
       </div>
     </footer>
   );

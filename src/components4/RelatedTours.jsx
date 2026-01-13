@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./RelatedTours.css";
 
 /* IMPORT IMAGES FROM src/assets */
-import rajasthanImg from "../assets/rajasthan.jpg";
+import rajasthanImg from "../assets/rajasthan.webp";
 import keralaImg from "../assets/kerala.jpeg";
 import featuredImg from "../assets/featured2.jpg";
 

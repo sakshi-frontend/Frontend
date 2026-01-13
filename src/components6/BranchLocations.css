@@ -1,16 +1,37 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* Section */
 .branch-section {
   padding: 90px 8%;
-  background: #f9fafb;
+  background: var(--bg-section);
   text-align: center;
 }
 
 .branch-section h2 {
   font-size: 2.4rem;
   margin-bottom: 10px;
+  color: var(--text-primary);
 }
 
 .section-subtitle {
-  color: #666;
+  color: var(--text-secondary);
   margin-bottom: 40px;
 }
 
@@ -26,22 +47,23 @@
 .branch-tabs button {
   padding: 12px 28px;
   border-radius: 30px;
-  border: 1px solid #ddd;
-  background: #ffffff;
+  border: 1px solid var(--border-soft);
+  background: var(--bg-card);
+  color: var(--text-primary);
   cursor: pointer;
   font-weight: 600;
   transition: all 0.35s ease;
 }
 
 .branch-tabs button:hover {
-  border-color: brown;
-  color: brown;
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
 }
 
 .branch-tabs button.active {
-  background: brown;
-  color: #ffffff;
-  border-color: brown;
+  background: var(--accent-primary);
+  color: var(--btn-text);
+  border-color: var(--accent-primary);
 }
 
 /* Content */
@@ -59,37 +81,41 @@
 
 /* Card */
 .branch-card {
-  background: #ffffff;
+  background: var(--bg-card);
   padding: 40px;
   border-radius: 20px;
   text-align: left;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
   transition: all 0.4s ease;
+  border: 1px solid var(--border-soft);
+  color: var(--text-primary);
 }
 
 .branch-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.55);
 }
 
 .branch-card h3 {
   font-size: 1.6rem;
   margin-bottom: 10px;
+  color: var(--text-primary);
 }
 
 .branch-card .city {
   font-weight: 600;
   margin-bottom: 10px;
+  color: var(--text-primary);
 }
 
 .branch-card .address {
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 14px;
 }
 
 .branch-card .phone {
   font-weight: 600;
-  color: brown;
+  color: var(--accent-primary);
 }
 
 /* Map */

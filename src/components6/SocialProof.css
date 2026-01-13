@@ -1,7 +1,28 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* Section */
 .social-proof-section {
-  background: #f9fafb;
+  background: var(--bg-section);
   padding: 80px 8%;
   text-align: center;
+  color: var(--text-primary);
 }
 
 /* Container */
@@ -24,7 +45,7 @@
 
 .stars {
   font-size: 1.8rem;
-  color: #ffb400;
+  color: var(--accent-primary);
 }
 
 .rating-score {
@@ -35,7 +56,7 @@
 
 .rating-text {
   font-size: 0.95rem;
-  color: #666;
+  color: var(--text-secondary);
 }
 
 /* Partner Logos */
@@ -67,27 +88,29 @@
 }
 
 .metric-card {
-  background: #ffffff;
+  background: var(--bg-card);
   padding: 28px 36px;
   border-radius: 18px;
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
+  border: 1px solid var(--border-soft);
+  color: var(--text-primary);
 }
 
 .metric-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.55);
 }
 
 .metric-card h3 {
   font-size: 1.8rem;
-  color: brown;
+  color: var(--accent-primary);
   margin-bottom: 6px;
 }
 
 .metric-card p {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-secondary);
 }
 
 /* Animation */

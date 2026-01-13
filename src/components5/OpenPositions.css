@@ -1,17 +1,39 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* OPEN POSITIONS SECTION */
 .open-positions {
   padding: 90px 20px;
-  background: #ffffff;
+  background: var(--bg-section);
   text-align: center;
 }
 
+/* HEADINGS */
 .section-heading {
   font-size: 2.6rem;
   font-weight: 700;
+  color: var(--text-primary);
 }
 
 .section-subheading {
   margin-top: 10px;
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 50px;
   font-size: 1.2rem;
 }
@@ -28,22 +50,23 @@
 .tab-btn {
   padding: 10px 22px;
   border-radius: 25px;
-  border: 1px solid #ddd;
-  background: #fff;
+  border: 1px solid var(--border-soft);
+  background: var(--bg-card);
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: 500;
+  color: var(--text-primary);
 }
 
 .tab-btn:hover {
-  background: brown;
-  color: #fff;
+  background: var(--accent-primary);
+  color: var(--btn-text);
 }
 
 .tab-btn.active {
-  background: brown;
-  color: #fff;
-  border-color: brown;
+  background: var(--accent-primary);
+  color: var(--btn-text);
+  border-color: var(--accent-primary);
 }
 
 /* Job Cards */
@@ -56,23 +79,24 @@
 }
 
 .job-card {
-  background: #f9fafc;
+  background: var(--bg-card);
   padding: 30px;
   border-radius: 14px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
   transition: all 0.4s ease;
   animation: fadeUp 0.8s ease forwards;
+  border: 1px solid var(--border-soft);
 }
 
 .job-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.65);
 }
 
 .job-card h3 {
   font-size: 1.4rem;
   margin-bottom: 20px;
-  color: #222;
+  color: var(--text-primary);
 }
 
 /* Job Info */
@@ -80,7 +104,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 8px;
 }
 
@@ -95,8 +119,8 @@
 
 .apply-btn {
   padding: 10px 22px;
-  background: brown;
-  color: #fff;
+  background: var(--accent-primary);
+  color: var(--btn-text);
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -105,22 +129,23 @@
 }
 
 .apply-btn:hover {
-  background: brown;
+  background: var(--accent-primary);
   transform: scale(1.05);
 }
 
 .upload-btn {
   padding: 10px 18px;
-  border: 1px dashed #aaa;
+  border: 1px dashed var(--text-secondary);
   border-radius: 6px;
   cursor: pointer;
   font-size: 0.9rem;
+  color: var(--text-secondary);
   transition: all 0.3s ease;
 }
 
 .upload-btn:hover {
-  border-color: brown;
-  color: brown;
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
 }
 
 /* Animation */

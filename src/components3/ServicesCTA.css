@@ -1,35 +1,59 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* CTA SECTION */
 .services-cta {
   padding: 90px 20px;
-  background: #f5f2ef; /* light background for contrast */
+  background: var(--bg-section); /* dark section background */
   display: flex;
   justify-content: center;
 }
 
+/* CTA BOX */
 .cta-box {
-  background: #ffffff;
+  background: var(--bg-card); /* dark card background */
   padding: 60px 40px;
   border-radius: 20px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.65); /* darker shadow for dark theme */
   width: 100%;
-  max-width: 1200px; /* increased from 900px to 1200px */
+  max-width: 1200px;
   text-align: center;
-  box-sizing: border-box; /* ensures padding doesn’t exceed max-width */
+  box-sizing: border-box;
+  border: 1px solid var(--border-soft);
 }
 
+/* CTA TEXT */
 .cta-box h2 {
   font-size: 36px;
   font-weight: 700;
-  color: #1f1f1f;
+  color: var(--text-primary);
   margin-bottom: 16px;
 }
 
 .cta-box p {
   font-size: 18px;
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 40px;
   line-height: 1.6;
 }
 
+/* CTA BUTTONS */
 .cta-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -39,8 +63,8 @@
 
 .cta-btn {
   background: transparent;
-  border: 2px solid brown;
-  color: brown;
+  border: 2px solid var(--accent-primary);
+  color: var(--accent-primary);
   padding: 14px 28px;
   border-radius: 30px;
   font-size: 16px;
@@ -50,8 +74,8 @@
 }
 
 .cta-btn:hover {
-  background: brown;
-  color: #fff;
+  background: var(--accent-primary);
+  color: var(--btn-text);
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
 }

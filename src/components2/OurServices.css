@@ -1,9 +1,30 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* SECTION */
 .our-services {
   padding: 80px 0;
-  background: #f9f9f9;
+  background: var(--bg-section);
   font-family: 'Poppins', sans-serif;
 }
 
+/* CONTAINER */
 .container {
   max-width: 1200px;
   margin: auto;
@@ -11,78 +32,72 @@
   text-align: center;
 }
 
+/* TITLES */
 .section-title {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: var(--text-primary);
 }
 
 .section-subtitle {
   font-size: 16px;
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 50px;
 }
 
-/* Grid */
+/* GRID */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
 }
 
-/* Card */
-.service-card {
-  background: #ffffff;
-  padding: 30px 25px;
-  border-radius: 14px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+.our-services .service-card {
   position: relative;
+  overflow: hidden;
+
+  background-color: var(--bg-card) !important;
+  padding: 30px 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
   cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  border: 1px solid var(--border-soft);
 }
 
-/* Brown top accent on hover */
-.service-card::before {
+.our-services .service-card::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   height: 4px;
   width: 0%;
-  background: brown;
+  background: var(--accent-primary);
   transition: width 0.3s ease;
 }
 
-.service-card:hover::before {
-  width: 100%;
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
-}
-
-/* Icon */
+/* ICON */
 .service-icon {
   font-size: 34px;
-  color: brown;
+  color: #E0B15C!important;
   margin-bottom: 15px;
 }
 
-/* Text */
+/* TEXT */
 .service-card h3 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
+ color: white !important;
 }
 
 .service-card p {
   font-size: 14.5px;
-  color: #555;
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .section-title {
     font-size: 30px;

@@ -1,7 +1,28 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* Blog Categories Section */
 .blog-categories {
-  margin-bottom: 80–100px;
+  margin-bottom: 80px;
   margin-top: 100px;
 }
+
 /* Section header */
 .categories-header {
   text-align: center;
@@ -12,13 +33,13 @@
 .categories-header h2 {
   font-size: 38px;
   font-weight: 700;
-  color: #3e2723;
+  color: var(--text-primary);
   margin-bottom: 12px;
 }
 
 .categories-header p {
   font-size: 16px;
-  color: #6d4c41;
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
@@ -29,7 +50,6 @@
   }
 }
 
-
 .category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -38,17 +58,17 @@
 
 /* Card */
 .category-card {
-  background: #ffffff;
+  background: var(--bg-card);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 18px 40px rgba(62, 39, 35, 0.12);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
   transition: all 0.4s ease;
- 
+  border: 1px solid var(--border-soft);
 }
 
 /* Scroll-spy active */
 .category-card.active {
-  border-color: #8d6e63;
+  border-color: var(--accent-primary);
   transform: translateY(-6px);
 }
 
@@ -76,7 +96,7 @@
 
 .category-content h3 {
   font-size: 20px;
-  color: #3e2723;
+  color: var(--text-primary);
   margin-bottom: 14px;
 }
 
@@ -87,7 +107,7 @@
 
 .category-content li {
   font-size: 14px;
-  color: #5d4037;
+  color: var(--text-secondary);
   margin-bottom: 10px;
   padding-left: 18px;
   position: relative;
@@ -97,12 +117,12 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: #8d6e63;
+  color: var(--accent-primary);
 }
 
 /* Highlight company expertise */
 .category-card.highlight {
-  background: linear-gradient(135deg, #fff7ef, #ffffff);
+  background: var(--bg-card);
 }
 
 /* Responsive */

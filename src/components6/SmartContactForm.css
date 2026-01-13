@@ -1,16 +1,37 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* CONTACT FORM SECTION */
 .contact-form-section {
   padding: 90px 8%;
-  background: #ffffff;
+  background: var(--bg-section);
+  color: var(--text-primary);
 }
 
 /* Container */
 .form-container {
   max-width: 850px;
   margin: auto;
-  background: #f9fafb;
+  background: var(--bg-card);
   padding: 50px 45px;
   border-radius: 22px;
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
   animation: fadeUp 1s ease forwards;
 }
 
@@ -19,11 +40,12 @@
   font-size: 2.2rem;
   text-align: center;
   margin-bottom: 10px;
+  color: var(--text-primary);
 }
 
 .form-subtitle {
   text-align: center;
-  color: #666;
+  color: var(--text-secondary);
   margin-bottom: 35px;
 }
 
@@ -46,25 +68,26 @@ textarea {
   width: 100%;
   padding: 14px 16px;
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-soft);
   font-size: 0.95rem;
   transition: all 0.3s ease;
-  background: #fff;
+  background: var(--bg-main);
+  color: var(--text-primary);
 }
 
 /* Hover + focus */
 input:hover,
 select:hover,
 textarea:hover {
-  border-color: #ff3b3b;
+  border-color: var(--accent-primary);
 }
 
 input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: #ff3b3b;
-  box-shadow: 0 0 0 3px rgba(255, 59, 59, 0.15);
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(224, 177, 92, 0.25);
 }
 
 /* Textarea */
@@ -76,8 +99,8 @@ textarea {
 .submit-btn {
   margin-top: 10px;
   padding: 16px;
-  background: brown;
-  color: #ffffff;
+  background: var(--accent-primary);
+  color: var(--btn-text);
   font-size: 1rem;
   border-radius: 40px;
   border: none;
@@ -88,14 +111,14 @@ textarea {
 
 .submit-btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 35px rgba(255, 59, 59, 0.45);
+  box-shadow: 0 14px 35px rgba(224, 177, 92, 0.45);
 }
 
 /* Trust line */
 .trust-line {
   text-align: center;
   font-size: 0.85rem;
-  color: #777;
+  color: var(--text-muted);
   margin-top: 12px;
 }
 

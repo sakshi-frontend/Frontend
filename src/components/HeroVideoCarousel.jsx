@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import "./HeroVideoCarousel.css";
 
 /* Import images from src/assets */
-import singaporeImg from "../assets/singapore.jpg";
-import rajasthanImg from "../assets/rajasthan.jpg";
-import disneylandImg from "../assets/disneyland.jpg";
+import singaporeImg from "../assets/singapore.webp";
+import rajasthanImg from "../assets/rajasthan.webp";
+import disneylandImg from "../assets/disneyland.webp";
 
 const slides = [
   { image: singaporeImg },

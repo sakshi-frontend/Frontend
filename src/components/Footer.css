@@ -1,8 +1,9 @@
 .footer {
-  background: #fff8f2; /* very light warm cream */
+  background-color: #0B1117; /* deep dark footer */
   padding-top: 60px;
-  color: black;
+  color: #8A96A3; /* muted text */
   font-size: 14px;
+  border-top: 1px solid #223041;
 }
 
 /* LAYOUT */
@@ -24,14 +25,14 @@
 /* DESCRIPTION */
 .footer-desc {
   line-height: 1.7;
-  color:black;
+  color: #B8C2CC; /* readable soft text */
 }
 
 /* HEADINGS */
 .footer-col h4 {
   font-size: 16px;
   margin-bottom: 16px;
-  color: brown; /* brown brand color */
+  color: #E0B15C; /* gold accent */
   font-weight: 600;
 }
 
@@ -47,13 +48,13 @@
 }
 
 .footer-col ul li a {
-  color: black;
+  color: #B8C2CC;
   text-decoration: none;
   transition: color 0.25s ease;
 }
 
 .footer-col ul li a:hover {
-  color: brown; /* brown hover */
+  color: #E0B15C;
 }
 
 /* CONTACT */
@@ -62,11 +63,11 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
-  color: black;
+  color: #B8C2CC;
 }
 
 .footer-contact svg {
-  color: brown;
+  color: #E0B15C;
 }
 
 /* SOCIAL ICONS */
@@ -80,29 +81,29 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #fdece6; /* very light brown */
+  background-color: #16222E; /* dark card */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: brown;
+  color: #E0B15C;
   font-size: 15px;
   transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-  background: brown;
-  color: #ffffff;
+  background-color: #E0B15C;
+  color: #0E141B;
   transform: translateY(-2px);
 }
 
 /* FOOTER BOTTOM */
 .footer-bottom {
-  border-top: 1px solid #f2d9cc;
+  border-top: 1px solid #223041;
   padding: 16px 20px;
   text-align: center;
   font-size: 13px;
-  color: #666;
-  background: #fff3eb;
+  color: #8A96A3;
+  background-color: #0E141B;
 }
 
 /* RESPONSIVE */

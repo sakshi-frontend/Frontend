@@ -1,23 +1,43 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* BLOG SEO SECTION */
 .blog-seo-section {
   padding: 60px 6%;
-  
   text-align: center;
-  
+  background: var(--bg-section);
 }
 
 .blog-seo-section h2 {
   font-size: 28px;
   font-weight: 700;
-  color: #3e2723;
+  color: var(--text-primary);
   margin-bottom: 12px;
 }
 
 .blog-seo-section p {
   font-size: 16px;
-  color: #5d4037;
+  color: var(--text-secondary);
   margin-bottom: 30px;
 }
 
+/* GRID */
 .seo-points-grid {
   display: flex;
   flex-wrap: wrap;
@@ -25,20 +45,21 @@
   gap: 20px;
 }
 
+/* POINT CARD */
 .seo-point-card {
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 16px;
   padding: 20px 24px;
   min-width: 220px;
   max-width: 280px;
   font-weight: 600;
-  color: #3e2723;
+  color: var(--text-primary);
+  border: 1px solid var(--border-soft);
   transition: all 0.3s ease;
   cursor: default;
 }
 
-
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .seo-points-grid {
     flex-direction: column;

@@ -1,25 +1,49 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* =========================
+   MISSION & VISION SECTION
+   ========================= */
 .mission-vision {
   padding: 80px 0;
-  background: #f9f9f9;
+  background: var(--bg-section);
   font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
-  text-align: center;
 }
 
+/* Titles */
 .section-title {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: var(--text-primary);
 }
 
 .section-subtitle {
   font-size: 16px;
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 50px;
 }
 
@@ -32,16 +56,16 @@
 
 /* Cards */
 .mv-card {
-  background: #ffffff;
+  background: var(--bg-card);
   padding: 30px 25px;
   border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
   transition: all 0.3s ease;
   cursor: pointer;
   position: relative;
 }
 
-/* Brown top border on hover */
+/* Top accent bar on hover */
 .mv-card::before {
   content: "";
   position: absolute;
@@ -49,7 +73,7 @@
   left: 0;
   height: 4px;
   width: 0%;
-  background: brown;
+  background: var(--accent-primary);
   transition: width 0.3s ease;
 }
 
@@ -59,13 +83,13 @@
 
 .mv-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.55);
 }
 
 /* Icons */
 .mv-icon {
   font-size: 32px;
-  color: brown;
+  color: var(--accent-primary);
   margin-bottom: 12px;
 }
 
@@ -74,13 +98,14 @@
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 16px;
+  color: var(--text-primary);
 }
 
 .mv-card ul {
   list-style-type: disc;
   text-align: left;
   padding-left: 20px;
-  color: #555;
+  color: var(--text-secondary);
   font-size: 15px;
   line-height: 1.6;
 }

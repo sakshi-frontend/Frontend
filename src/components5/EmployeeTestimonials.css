@@ -1,21 +1,44 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* TESTIMONIALS SECTION */
 .testimonials-section {
   padding: 90px 20px;
-  background: #f7f9fc;
+  background: var(--bg-section);
   text-align: center;
 }
 
+/* HEADINGS */
 .section-heading {
   font-size: 2.6rem;
   font-weight: 700;
+  color: var(--text-primary);
 }
 
 .section-subheading {
   margin-top: 10px;
   font-size: 1.2rem;
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 60px;
 }
 
+/* GRID */
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -24,22 +47,25 @@
   margin: auto;
 }
 
+/* CARD */
 .testimonial-card {
-  background: #ffffff;
+  background: var(--bg-card);
   padding: 35px 25px;
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
   transition: all 0.4s ease;
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 0.8s forwards;
+  border: 1px solid var(--border-soft);
 }
 
 .testimonial-card:hover {
   transform: translateY(-12px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.65);
 }
 
+/* PHOTO */
 .photo-wrapper {
   width: 90px;
   height: 90px;
@@ -47,7 +73,7 @@
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 20px;
-  border: 3px solid #ffb703;
+  border: 3px solid var(--accent-primary);
   transition: transform 0.4s ease;
 }
 
@@ -61,23 +87,25 @@
   object-fit: cover;
 }
 
+/* QUOTE */
 .quote {
   font-size: 1rem;
   font-style: italic;
-  color: #444;
+  color: var(--text-secondary);
   margin-bottom: 15px;
   line-height: 1.6;
 }
 
+/* NAME & POSITION */
 .testimonial-card h4 {
   margin: 5px 0;
   font-size: 1.1rem;
-  color: #222;
+  color: var(--text-primary);
 }
 
 .testimonial-card span {
   font-size: 0.9rem;
-  color: #777;
+  color: var(--text-muted);
 }
 
 /* Animation delay */
@@ -85,6 +113,7 @@
 .testimonial-card:nth-child(2) { animation-delay: 0.4s; }
 .testimonial-card:nth-child(3) { animation-delay: 0.6s; }
 
+/* ANIMATION */
 @keyframes fadeUp {
   to {
     opacity: 1;

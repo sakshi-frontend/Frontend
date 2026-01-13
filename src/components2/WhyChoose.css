@@ -1,9 +1,30 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* SECTION */
 .why-choose {
   padding: 80px 0;
-  background: #f9f9f9;
+  background: var(--bg-section);
   font-family: 'Poppins', sans-serif;
 }
 
+/* CONTAINER */
 .container {
   max-width: 1200px;
   margin: auto;
@@ -11,37 +32,42 @@
   text-align: center;
 }
 
+/* TITLES */
 .section-title {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: var(--text-primary);
 }
 
 .section-subtitle {
   font-size: 16px;
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 50px;
 }
 
-/* Grid */
+/* GRID */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
 }
 
-/* Feature Card */
+/* FEATURE CARD */
 .feature-card {
-  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+
+  background: var(--bg-card);
   padding: 30px 25px;
   border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
   transition: all 0.3s ease;
   cursor: pointer;
-  position: relative;
+  border: 1px solid var(--border-soft);
 }
 
-/* Hover effect with brown top border */
+/* HOVER TOP BORDER */
 .feature-card::before {
   content: "";
   position: absolute;
@@ -49,7 +75,7 @@
   left: 0;
   height: 4px;
   width: 0%;
-  background: brown;
+  background: var(--accent-primary);
   transition: width 0.3s ease;
 }
 
@@ -59,31 +85,32 @@
 
 .feature-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
 }
 
-/* Icon */
+/* ICON */
 .feature-icon {
   font-size: 32px;
-  color: brown;
+  color: var(--accent-primary);
   margin-bottom: 12px;
 }
 
-/* Typography */
+/* TYPOGRAPHY */
 .feature-card h3 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
+  color: var(--text-primary);
 }
 
 .feature-card p {
   font-size: 15px;
-  color: #555;
+  color: var(--text-secondary);
   line-height: 1.6;
-  min-height: 60px; /* Keeps cards uniform height */
+  min-height: 60px;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .section-title {
     font-size: 30px;

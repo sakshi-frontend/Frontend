@@ -1,6 +1,25 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* Featured Blogs Section */
 .featured-blogs {
-   padding-top: 50px;
-  
+  padding-top: 50px;
 }
 
 /* HEADER */
@@ -13,13 +32,13 @@
 .featured-header h2 {
   font-size: 38px;
   font-weight: 700;
-  color: #3e2723;
+  color: var(--text-primary);
   margin-bottom: 12px;
 }
 
 .featured-header p {
   font-size: 16px;
-  color: #6d4c41;
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
@@ -32,15 +51,15 @@
 
 /* CARD */
 .featured-card {
-  background: #ffffff;
+  background: var(--bg-card);
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 18px 40px rgba(62, 39, 35, 0.12);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
   transition: box-shadow 0.3s ease;
 }
 
 .featured-card:hover {
-  box-shadow: 0 28px 60px rgba(62, 39, 35, 0.18);
+  box-shadow: 0 28px 60px rgba(0,0,0,0.55);
 }
 
 /* IMAGE */
@@ -60,8 +79,8 @@
   position: absolute;
   top: 14px;
   left: 14px;
-  background: brown;
-  color: #fff;
+  background: var(--accent-primary);
+  color: var(--btn-text);
   padding: 6px 12px;
   font-size: 12px;
   border-radius: 20px;
@@ -74,13 +93,13 @@
 
 .read-time {
   font-size: 13px;
-  color: #8d6e63;
+  color: var(--text-muted);
 }
 
 .featured-content h3 {
   font-size: 18px;
   font-weight: 600;
-  color: #3e2723;
+  color: var(--text-primary);
   margin: 10px 0 16px;
   line-height: 1.4;
 }
@@ -89,7 +108,7 @@
 .read-btn {
   background: transparent;
   border: none;
-  color:brown;
+  color: var(--accent-primary);
   font-weight: 600;
   cursor: pointer;
   padding: 0;
@@ -97,7 +116,7 @@
 }
 
 .read-btn:hover {
-  color: #3e2723;
+  color: var(--text-primary);
 }
 
 /* MOBILE */

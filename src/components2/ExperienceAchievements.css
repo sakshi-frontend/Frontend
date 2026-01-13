@@ -1,6 +1,28 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
+/* =========================
+   EXPERIENCE & ACHIEVEMENTS
+   ========================= */
 .experience-achievements {
   padding: 80px 0;
-  background: #ffffff;
+  background: var(--bg-section);
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
@@ -11,44 +33,50 @@
   padding: 0 20px;
 }
 
+/* Titles */
 .section-title {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: var(--text-primary);
 }
 
 .section-subtitle {
   font-size: 16px;
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 50px;
 }
 
+/* Grid */
 .achievements-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
 }
 
+/* Card */
 .achievement-card {
-  background: #f9f9f9;
+  background: var(--bg-card);
   padding: 30px 20px;
   border-radius: 15px;
   transition: all 0.3s ease;
   cursor: pointer;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
 }
 
 .achievement-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.55);
 }
 
+/* Icon */
 .achievement-icon {
   font-size: 32px;
-  color: brown;
+  color: var(--accent-primary);
   margin-bottom: 15px;
 }
 
+/* Circle */
 .achievement-circle {
   position: relative;
   width: 100px;
@@ -64,13 +92,13 @@
 
 .circle-bg {
   fill: none;
-  stroke: #eee;
+  stroke: var(--border-soft);
   stroke-width: 3.8;
 }
 
 .circle {
   fill: none;
-  stroke: rgb(92, 170, 92);
+  stroke: var(--accent-primary);
   stroke-width: 3.8;
   stroke-linecap: round;
   transition: stroke-dasharray 0.5s ease;
@@ -83,16 +111,18 @@
   transform: translate(-50%, -50%);
   font-size: 16px;
   font-weight: 600;
-  color: brown;
+  color: var(--accent-primary);
 }
 
+/* Card Title */
 .achievement-card h3 {
   font-size: 16px;
   font-weight: 600;
   margin-top: 10px;
-  color: #333;
+  color: var(--text-primary);
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .section-title {
     font-size: 30px;

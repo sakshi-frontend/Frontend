@@ -1,84 +1,93 @@
-.why-choose-us {
+/* ===============================
+   WHY CHOOSE US – DARK PREMIUM
+   =============================== */
+
+/* SECTION */
+section.why-choose-us {
   padding: 80px 0;
-  background: #f8f8f8;
+  background-color: var(--bg-section);
 }
 
-.container {
+/* CONTAINER (scoped) */
+section.why-choose-us .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
 
-.section-title {
+/* TITLES */
+section.why-choose-us .section-title {
   text-align: center;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 8px;
+  color: #ffffff;
 }
 
-.section-subtitle {
+section.why-choose-us .section-subtitle {
   text-align: center;
-  color: #666;
+  color: var(--text-secondary);
   margin-bottom: 50px;
 }
 
 /* GRID */
-.features-grid {
+section.why-choose-us .features-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
 }
 
 /* CARD */
-.feature-card {
-  background: #ffffff;
+section.why-choose-us .feature-card {
+  background-color: var(--bg-card);
   padding: 35px 25px;
   text-align: center;
   border-radius: 12px;
   transition: all 0.35s ease;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-soft);
 }
 
-.feature-card:hover {
+section.why-choose-us .feature-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
-  border-top: 4px solid brown; /* brown hover accent */
+  border-color: var(--accent-primary);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
 }
 
 /* ICON */
-.icon-box {
+section.why-choose-us .icon-box {
   font-size: 40px;
-  color: brown; /* dark red */
+  color: var(--accent-primary);
   margin-bottom: 18px;
   transition: color 0.3s ease;
 }
 
-.feature-card:hover .icon-box {
-  color: brown; /* brown on hover */
+section.why-choose-us .feature-card:hover .icon-box {
+  color: var(--btn-hover);
 }
 
 /* TEXT */
-.feature-card h3 {
+section.why-choose-us .feature-card h3 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
+  color: var(--text-primary);
 }
 
-.feature-card p {
+section.why-choose-us .feature-card p {
   font-size: 14px;
-  color: #555;
+  color: var(--text-muted);
   line-height: 1.6;
 }
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
-  .features-grid {
+  section.why-choose-us .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 576px) {
-  .features-grid {
+  section.why-choose-us .features-grid {
     grid-template-columns: 1fr;
   }
 }

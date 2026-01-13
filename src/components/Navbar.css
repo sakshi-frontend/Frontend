@@ -1,25 +1,29 @@
-body{
+
+/* GLOBAL */
+body {
   font-family: 'Poppins', sans-serif;
+  background-color: #0E141B;
+  color: #E6EDF3;
 }
+
 /* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #ffffff;
+  background-color: #0E141B; /* dark main */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 50px; /* enough padding for premium look */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-  height: auto; /* let content determine height */
-  min-height: 90px; /* ensures navbar is tall enough */
+  padding: 8px 50px;
+  border-bottom: 1px solid #223041;
+  min-height: 90px;
 }
 
 /* LOGO */
 .logo img,
 .logo-svg {
-  height: 70px; /* bigger logo for better visibility */
+  height: 70px;
   width: auto;
   object-fit: contain;
   transition: all 0.3s ease;
@@ -36,14 +40,16 @@ body{
 
 .nav-links a {
   text-decoration: none;
-  color: #222;
-  font-size: 20px; /* bigger font for professional feel */
+  color: #B8C2CC; /* soft light text */
+  font-size: 20px;
   font-weight: 700;
   position: relative;
+  transition: color 0.3s ease;
 }
 
+/* ACTIVE LINK */
 .nav-links a.active {
-  color: brown;
+  color: #E0B15C; /* gold */
 }
 
 /* HOVER UNDERLINE */
@@ -54,8 +60,12 @@ body{
   bottom: -6px;
   width: 0;
   height: 2px;
-  background: brown;
+  background-color: #E0B15C;
   transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #E6EDF3;
 }
 
 .nav-links a:hover::after {
@@ -66,14 +76,14 @@ body{
 .hamburger {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
   cursor: pointer;
 }
 
 .hamburger span {
   width: 28px;
   height: 3px;
-  background: #222;
+  background-color: #E6EDF3;
   transition: all 0.3s ease;
 }
 
@@ -98,16 +108,16 @@ body{
 
   .nav-links {
     position: absolute;
-    top: 100%; /* just below navbar */
+    top: 100%;
     left: 0;
     width: 100%;
-    background: #ffffff;
+    background-color: #121C26; /* dark section */
     flex-direction: column;
     align-items: center;
     gap: 22px;
     padding: 25px 0;
     display: none;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-top: 1px solid #223041;
   }
 
   .nav-links.show {

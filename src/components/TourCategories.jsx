@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./TourCategories.css";
+
 import domestic from "../assets/domestic.jpg";
 import international from "../assets/international.jpg";
 import week from "../assets/week.jpg";
@@ -8,7 +9,6 @@ import corporate from "../assets/corporate.webp";
 import family from "../assets/family.avif";
 import groups from "../assets/groups.jpg";
 import solo from "../assets/solo.webp";
-
 
 const categories = [
   { title: "Domestic Tours", image: domestic, path: "/tours/domestic" },
@@ -20,7 +20,6 @@ const categories = [
   { title: "Group Tours", image: groups, path: "/tours/groups" },
   { title: "Solo Tours", image: solo, path: "/tours/solo" },
 ];
-
 
 export default function TourCategoriesSection() {
   const navigate = useNavigate();
@@ -41,7 +40,10 @@ export default function TourCategoriesSection() {
               </div>
               <div className="card-content">
                 <h3>{item.title}</h3>
-                <button className="view-btn" onClick={() => navigate(item.path)}>
+                <button
+                  className="view-btn"
+                  onClick={() => navigate(item.path)}
+                >
                   View Packages
                 </button>
               </div>

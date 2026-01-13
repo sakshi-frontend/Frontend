@@ -1,7 +1,26 @@
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --btn-bg: #E0B15C;
+  --btn-text: #0E141B;
+  --btn-hover: #F2C777;
+
+  --border-soft: #223041;
+}
+
 /* Section */
 .growth-section {
   padding: 100px 20px;
-  background: #f7f9fc;
+  background: var(--bg-section);
   text-align: center;
 }
 
@@ -9,12 +28,12 @@
 .section-heading {
   font-size: 2.6rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--text-primary);
 }
 
 .section-subheading {
   margin: 10px 0 50px;
-  color: #6b7280;
+  color: var(--text-secondary);
 }
 
 /* Counters */
@@ -27,15 +46,15 @@
 }
 
 .counter-box {
-  background: white;
+  background: var(--bg-card);
   padding: 25px;
   border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
 .counter-box h3 {
   font-size: 2rem;
-  color: brown;
+  color: var(--accent-primary);
 }
 
 /* Cards */
@@ -56,10 +75,10 @@
 }
 
 .growth-card {
-  background: white;
+  background: var(--bg-card);
   padding: 35px 25px;
   border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   transition: all 0.35s ease;
 }
 
@@ -69,7 +88,7 @@
 
 .icon {
   font-size: 2.2rem;
-  color: brown;
+  color: var(--accent-primary);
   margin-bottom: 15px;
 }
 
@@ -91,16 +110,17 @@
   left: 0;
   width: 100%;
   height: 4px;
-  background: brown;
+  background: var(--accent-primary);
   z-index: -1;
 }
 
 .timeline-item {
-  background: white;
+  background: var(--bg-card);
   padding: 15px 20px;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
   font-weight: 600;
+  color: var(--text-primary);
 }
 
 /* Mobile */

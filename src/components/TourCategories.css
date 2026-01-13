@@ -1,113 +1,91 @@
+
 /* ===============================
-   Tour Categories Section – Premium CSS
-   Color Theme: White + Brown
+   FORCE DARK THEME – TOUR CATEGORIES
    =============================== */
 
-.tour-categories {
-  background: #ffffff;
+:root {
+  --bg-main: #0E141B;
+  --bg-section: #121C26;
+  --bg-card: #16222E;
+
+  --text-primary: #E6EDF3;
+  --text-secondary: #B8C2CC;
+  --text-muted: #8A96A3;
+
+  --accent-primary: #E0B15C;
+  --accent-secondary: #1FA2A6;
+
+  --border-soft: #223041;
+  --btn-hover: brown;
+}
+
+/* FORCE SECTION BACKGROUND */
+section.tour-categories {
+  background-color: var(--bg-section) !important;
   padding: 80px 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+/* FORCE TITLES */
+section.tour-categories h2.section-title {
+  color: #ffffff !important;
 }
 
-.section-title {
-  text-align: center;
-  font-size: 34px;
-  font-weight: 600;
-  color: #111827;
-  margin-bottom: 10px;
+section.tour-categories p.section-subtitle {
+  color: var(--text-secondary) !important;
 }
 
-.section-subtitle {
-  text-align: center;
-  font-size: 15px;
-  color: #6b7280;
-  margin-bottom: 50px;
-}
-
-/* ===== Grid Layout ===== */
-.card-grid {
+/* GRID */
+section.tour-categories .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 28px;
 }
 
-/* ===== Card ===== */
-.tour-card {
-  background: #ffffff;
+/* CARD */
+section.tour-categories .tour-card {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-soft) !important;
   border-radius: 14px;
   overflow: hidden;
   transition: all 0.35s ease;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
 }
 
-.tour-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 10px brown /* premium brown shadow */
+section.tour-categories .tour-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-primary);
 }
 
-/* ===== Image ===== */
-.image-wrapper {
-  width: 100%;
+/* IMAGE */
+section.tour-categories .image-wrapper {
   height: 190px;
   overflow: hidden;
 }
 
-.image-wrapper img {
+section.tour-categories .image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
 }
 
-.tour-card:hover img {
-  transform: scale(1.08);
+/* CONTENT */
+section.tour-categories .card-content h3 {
+  color: var(--text-primary) !important;
 }
 
-/* ===== Content ===== */
-.card-content {
-  padding: 22px;
-  text-align: center;
-}
-
-.card-content h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #1f2937;
-  margin-bottom: 18px;
-}
-
-/* ===== Button ===== */
-.view-btn {
-  background: transparent;
-  border: 2px solid brown; /* brown */
-  color: brown;
-  padding: 10px 22px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
+/* BUTTON */
+section.tour-categories .view-btn {
+   flex: 1;
+  background-color: brown;
+  border: none;
+  color: white;
+  padding: 10px 5px;
+  border-radius: 6px;
+  
   cursor: pointer;
+  font-weight: 600;
   transition: all 0.3s ease;
 }
 
-.view-btn:hover {
-  background: brown;
-  color: #ffffff;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 1024px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
+section.tour-categories .view-btn:hover {
+ background-color: var(--btn-hover);
 }
